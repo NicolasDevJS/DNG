@@ -1,7 +1,7 @@
 "use client";
 import React, { useState, useEffect } from "react";
 import Image from "next/image";
-import Logo from "../../public/logo.png";
+import Logo from "../../../public/logo.png";
 import { Link } from "react-scroll";
 import { FaWhatsapp } from "react-icons/fa";
 import { CiLinkedin } from "react-icons/ci";

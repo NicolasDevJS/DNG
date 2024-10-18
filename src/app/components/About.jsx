@@ -1,16 +1,16 @@
 import React from "react";
 import Image from "next/image";
 import styled from "styled-components";
-import FadeInOnScroll from "../app/Scripts/FadeInOnScroll";
+import FadeInOnScroll from "../Scripts/FadeInOnScroll";
 import { FaLinkedin, FaGithub } from "react-icons/fa";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import nicolas from "../../public/nicolas.png";
-import davson from "../../public/davson.png";
-import venush from "../../public/venush.png";
-import felipe from "../../public/felipe.png";
-import daniel from "../../public/daniel.png";
+import nicolas from "../../../public/nicolas.png";
+import davson from "../../../public/davson.png";
+import venush from "../../../public/venush.png";
+import felipe from "../../../public/felipe.png";
+import daniel from "../../../public/daniel.png";
 
 const Section = styled.section`
   color: #4a5568;

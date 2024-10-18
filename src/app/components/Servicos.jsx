@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import FadeInOnScroll from "../app/Scripts/FadeInOnScroll";
+import FadeInOnScroll from "../Scripts/FadeInOnScroll";
 import { CiMemoPad, CiViewBoard, CiSettings } from "react-icons/ci";
 
 const Section = styled.section`

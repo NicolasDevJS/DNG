@@ -1,7 +1,7 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   compiler: {
-    styledComponents: true, // Habilita o suporte ao styled-components
+    styledComponents: true, 
   },
 };
 

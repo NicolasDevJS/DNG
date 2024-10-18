@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
-import BannerImage from "../../public/banner.png";
-import FadeInOnScroll from "../app/Scripts/FadeInOnScroll";
+import BannerImage from "../../../public/banner.png";
+import FadeInOnScroll from "../Scripts/FadeInOnScroll";
 import styled from "styled-components";
 import { FaWhatsapp } from "react-icons/fa";
 import { CiLinkedin } from "react-icons/ci";

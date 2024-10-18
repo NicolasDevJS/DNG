@@ -2,8 +2,8 @@ import React from 'react';
 import Image from 'next/image';
 import styled from 'styled-components';
 import { FaArrowRight } from 'react-icons/fa'; 
-import Building from '../../public/building.png';
-import FadeInOnScroll from '../app/Scripts/FadeInOnScroll';
+import Building from '../../../public/building.png';
+import FadeInOnScroll from '../Scripts/FadeInOnScroll';
 
 const Section = styled.section`
   color: #4a5568;

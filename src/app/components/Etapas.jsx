@@ -1,8 +1,8 @@
 import React from "react";
 import Image from "next/image";
 import styled from "styled-components";
-import ImgEtapas from "../../public/10624.png";
-import FadeInOnScroll from "../app/Scripts/FadeInOnScroll";
+import ImgEtapas from "../../../public/10624.png";
+import FadeInOnScroll from "../Scripts/FadeInOnScroll";
 import {
   FaCommentDots,
   FaPencilAlt,
