@@ -170,7 +170,7 @@ const teamMembers = [
   },
   {
     name: "Giusepp Venush",
-    title: "Desenvolvedor Front-End",
+    title: "Advogado",
     image: venush,
     description:
       "Meu trabalho é simples: garantir que vocês não acabem presos. Se der errado, foi só um 'mal-entendido' jurídico. Melhor deixar comigo!",
@@ -178,8 +178,8 @@ const teamMembers = [
     github: "https://github.com/",
   },
   {
-    name: "Henrique Silveira",
-    title: "Desenvolvedor Front-End",
+    name: "Felipe runescape",
+    title: "Desenvolvedor html",
     image: felipe,
     description:
       "Como dev front-end amador, meu talento é transformar simples páginas em enigmas visuais. Se o layout quebrar, é só o meu toque 'artístico'!",
