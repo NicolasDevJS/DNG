@@ -47,7 +47,7 @@ const Step = styled.div`
   align-items: center;
 
   .icon {
-    background-color: #3b82f6;
+    background-color: #778899;
     color: white;
     display: inline-flex;
     justify-content: center;
@@ -56,12 +56,12 @@ const Step = styled.div`
     height: 4rem;
     border-radius: 50%;
     z-index: 2;
-    flex-shrink: 0; /* Prevents the icon from being squished */
+    flex-shrink: 0; 
   }
 
   @media (max-width: 768px) {
     .icon {
-      width: 3.5rem;  /* Slightly smaller size for mobile */
+      width: 3.5rem;  
       height: 3.5rem;
     }
   }
