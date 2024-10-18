@@ -16,7 +16,6 @@ const Page = () => {
 
   return (
     <div>
-      {isReady && <Header />}
       <Banner />
       <About/>
       <Servicos/>

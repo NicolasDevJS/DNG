@@ -9,7 +9,7 @@ import styled from "styled-components";
 
 // Styled Components
 const HeaderWrapper = styled.header`
-  background-color: #778899;
+  background-color: #1f2937;
   color: white;
   position: fixed;
   width: 100%;
@@ -75,7 +75,7 @@ const Nav = styled.nav`
   flex-direction: ${({ isMobile }) => (isMobile ? "column" : "row")};
   justify-content: center;
   align-items: center;
-  background-color: ${({ isMobile }) => (isMobile ? "#212d63" : "transparent")};
+  background-color: ${({ isMobile }) => (isMobile ? "#1f2937" : "transparent")};
   position: ${({ isMobile, menuOpen }) =>
     isMobile && menuOpen ? "fixed" : "static"};
   top: ${({ isMobile, menuOpen }) => (isMobile && menuOpen ? "80px" : "auto")};
