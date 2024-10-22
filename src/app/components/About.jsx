@@ -155,7 +155,8 @@ const teamMembers = [
     name: "Nicolas Melo",
     title: "Desenvolvedor Full Stack Mobile e Web",
     image: nicolas,
-    description: "Especialista em desenvolvimento full stack mobile, meu foco é criar soluções inovadoras que maximizam a eficiência e a experiência do usuário. Com uma abordagem estratégica, busco otimizar a performance e funcionalidade de cada aplicativo.",
+    description:
+      "Especialista em desenvolvimento full stack mobile, meu foco é criar soluções inovadoras que maximizam a eficiência e a experiência do usuário. Com uma abordagem estratégica, busco otimizar a performance e funcionalidade de cada aplicativo.",
     linkedin: "https://www.linkedin.com/",
     github: "https://github.com/",
   },
@@ -190,8 +191,7 @@ const teamMembers = [
     name: "Daniel ???",
     title: "????? ??????",
     image: daniel,
-    description:
-      "?????? ?/??????? ???????? ???????? ??????? ???????",
+    description: "?????? ?/??????? ???????? ???????? ??????? ???????",
     linkedin: "https://www.linkedin.com/",
     github: "https://github.com/",
   },
@@ -204,14 +204,15 @@ const About = () => {
       <FadeInOnScroll>
         <ContentWrapper>
           <Title>Sobre a nossa equipe</Title>
-          <Paragraph>Bem-vindo(a) à VH Web Solutions,</Paragraph>
+          <Paragraph>Bem-vindo(a) à DNG Consulting</Paragraph>
           <Paragraph justify>
-            Somos uma equipe apaixonada por tecnologia, dedicada a criar
-            soluções digitais inovadoras para impulsionar o seu negócio. Com uma
-            vasta experiência no mercado, estamos prontos para enfrentar
-            desafios e entregar resultados excepcionais, sempre com foco na
-            satisfação dos nossos clientes. Nossa missão é tornar a sua presença
-            online única e impactante.
+            A DNG Consulting é uma equipe dedicada e apaixonada por tecnologia,
+            focada em desenvolver soluções digitais personalizadas para
+            alavancar o crescimento do seu negócio. Com ampla experiência no
+            mercado, enfrentamos desafios com determinação e entregamos
+            resultados excepcionais. Nosso compromisso é transformar a sua
+            presença digital em algo único e impactante, sempre priorizando a
+            satisfação e o sucesso dos nossos clientes.
           </Paragraph>
         </ContentWrapper>
       </FadeInOnScroll>
