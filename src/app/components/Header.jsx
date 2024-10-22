@@ -124,7 +124,6 @@ const Header = () => {
     <HeaderWrapper>
       <Container>
         <LogoContainer>
-          <Image src={Logo} alt="Logo" width={56} height={56} />
         </LogoContainer>
 
         <Nav isMobile={isMobile} menuOpen={menuOpen}>
