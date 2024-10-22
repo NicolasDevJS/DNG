@@ -140,9 +140,6 @@ const Header = () => {
           <NavLink to="projetos" spy={true} smooth={true} offset={-120} duration={500}>
             Projetos
           </NavLink>
-          <NavLink to="contato" spy={true} smooth={true} offset={-60} duration={500}>
-            Contato
-          </NavLink>
         </Nav>
 
         <SocialContainer>
