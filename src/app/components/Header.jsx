@@ -124,6 +124,7 @@ const Header = () => {
     <HeaderWrapper>
       <Container>
         <LogoContainer>
+          <LogoText>DNG Consulting</LogoText>
         </LogoContainer>
 
         <Nav isMobile={isMobile} menuOpen={menuOpen}>
