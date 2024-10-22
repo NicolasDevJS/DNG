@@ -127,7 +127,7 @@ const projectsData = [
       subtitle: 'TechCorp',
       description: 'Desenvolvimento de um site institucional moderno e responsivo para a TechCorp, destacando seus serviços de TI e soluções empresariais.',
       image: Building,
-      link: 'https://www.techcorp.com/',
+      link: '',
     },
     {
       title: 'Sistema Back-End',

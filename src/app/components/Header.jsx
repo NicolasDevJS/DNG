@@ -125,7 +125,6 @@ const Header = () => {
       <Container>
         <LogoContainer>
           <Image src={Logo} alt="Logo" width={56} height={56} />
-          <LogoText>DNG Consulting</LogoText>
         </LogoContainer>
 
         <Nav isMobile={isMobile} menuOpen={menuOpen}>
