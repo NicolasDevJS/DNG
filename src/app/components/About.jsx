@@ -2,18 +2,17 @@ import React from "react";
 import Image from "next/image";
 import styled from "styled-components";
 import FadeInOnScroll from "../Scripts/FadeInOnScroll";
-import { FaLinkedin, FaGithub } from "react-icons/fa";
+import { FaLinkedin } from "react-icons/fa";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import nicolas from "../../../public/nicolas.png";
 import davson from "../../../public/davson.png";
-import venush from "../../../public/venush.png";
+import venush from "../../../public/bovo.png";
 import felipe from "../../../public/felipe.png";
-import daniel from "../../../public/daniel.png";
 
 const Section = styled.section`
-  color: #4a5568;
+  color: #000000;
   background-color: #fff;
   padding: 2rem 0;
 `;
@@ -61,12 +60,6 @@ const Paragraph = styled.p`
   text-align: ${({ justify }) => (justify ? "justify" : "center")};
 `;
 
-const TeamWrapper = styled.div`
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-`;
-
 const CardContent = styled.div`
   background-color: #fff;
   padding: 2rem;
@@ -105,7 +98,7 @@ const SocialLinks = styled.span`
 `;
 
 const SocialLink = styled.a`
-  color: #718096;
+  color: #000000;
   margin-left: 0.5rem;
 
   svg {
@@ -118,6 +111,18 @@ const StyledSlider = styled(Slider)`
   .slick-slide {
     padding: 1rem;
   }
+`;
+
+const StyledImageContainer = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  overflow: hidden;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  background-color: #f0f0f0;
 `;
 
 const sliderSettings = {
@@ -156,44 +161,32 @@ const teamMembers = [
     title: "Desenvolvedor Full Stack Mobile e Web",
     image: nicolas,
     description:
-      "Especialista em desenvolvimento full stack mobile, meu foco é criar soluções inovadoras que maximizam a eficiência e a experiência do usuário. Com uma abordagem estratégica, busco otimizar a performance e funcionalidade de cada aplicativo.",
-    linkedin: "https://www.linkedin.com/",
-    github: "https://github.com/",
+      "Desenvolvedor full stack mobile, especialista em criar soluções inovadoras que maximizam eficiência, performance e oferecem experiências excepcionais.",
+    linkedin: "https://www.linkedin.com/in/nicolasmelodev/",
   },
   {
     name: "Davson Oliveira",
     title: "Desenvolvedor Back-end",
     image: davson,
     description:
-      "Como dev meu objetivo é Reclamar quando o código não funciona, reclamo quando funciona. A cada erro, cobro a equipe inteira... mas resolver? Ah, isso deixo pra depois!",
-    linkedin: "https://www.linkedin.com/",
-    github: "https://github.com/",
+      "Desenvolvedor backend especializado em arquiteturas robustas, focado em alta performance, segurança, escalabilidade e integração para sistemas eficientes e confiáveis.",
+    linkedin: "https://www.linkedin.com/in/davson-silva/",
   },
   {
-    name: "Giusepp Venush",
-    title: "Advogado",
+    name: "Giusepp Bovo",
+    title: "Gerente administrativo",
     image: venush,
     description:
-      "Meu trabalho é simples: garantir que vocês não acabem presos. Se der errado, foi só um 'mal-entendido' jurídico. Melhor deixar comigo!",
-    linkedin: "https://www.linkedin.com/",
-    github: "https://github.com/",
+      "Responsável pela parte administrativa e executiva da DNG, gerenciando atividades e garantindo eficiência dos processos internos e uma boa relação cliente-empresa.",
+    linkedin: "https://www.linkedin.com/in/giuseppe-bovo-801a93169/",
   },
   {
-    name: "Felipe runescape",
-    title: "Desenvolvedor html",
+    name: "Felipe Emanuel",
+    title: "Desenvolvedor Web",
     image: felipe,
     description:
-      "Como dev front-end amador, meu talento é transformar simples páginas em enigmas visuais. Se o layout quebrar, é só o meu toque 'artístico'!",
-    linkedin: "https://www.linkedin.com/",
-    github: "https://github.com/",
-  },
-  {
-    name: "Daniel ???",
-    title: "????? ??????",
-    image: daniel,
-    description: "?????? ?/??????? ???????? ???????? ??????? ???????",
-    linkedin: "https://www.linkedin.com/",
-    github: "https://github.com/",
+      "Desenvolvedor web especializado em criar interfaces intuitivas e sistemas dinâmicos, focado em performance, responsividade e experiências imersivas para o usuário.",
+    linkedin: "https://www.linkedin.com/in/felipe-emanuel-/",
   },
 ];
 
@@ -222,22 +215,23 @@ const About = () => {
           <div key={index}>
             <FadeInOnScroll>
               <CardContent>
-                <Image
-                  alt={member.name}
-                  src={member.image}
-                  width={192}
-                  height={192}
-                  style={{ borderRadius: "1rem" }}
-                />
+                <StyledImageContainer>
+                  <Image
+                    alt={member.name}
+                    src={member.image}
+                    width={150}
+                    height={150}
+                    style={{
+                      objectFit: "cover",
+                    }}
+                  />
+                </StyledImageContainer>
                 <CardTitle>{member.name}</CardTitle>
                 <CardSubtitle>{member.title}</CardSubtitle>
                 <CardText>{member.description}</CardText>
                 <SocialLinks>
                   <SocialLink href={member.linkedin}>
                     <FaLinkedin />
-                  </SocialLink>
-                  <SocialLink href={member.github}>
-                    <FaGithub />
                   </SocialLink>
                 </SocialLinks>
               </CardContent>

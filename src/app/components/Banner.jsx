@@ -119,7 +119,7 @@ const Banner = () => {
             </FadeInOnScroll>
             <FadeInOnScroll delay={400}>
               <Paragraph>
-                Na DNG, somos movidos pela inovação e compromisso em impulsionar o
+                Na DNG Consulting, somos movidos pela inovação e compromisso em impulsionar o
                 seu negócio para novos patamares no mundo digital. Enfrentamos
                 desafios com entusiasmo, entregando soluções personalizadas que
                 superam expectativas. Nosso foco é criar experiências digitais
@@ -129,7 +129,7 @@ const Banner = () => {
             </FadeInOnScroll>
             <FadeInOnScroll delay={600}>
               <ButtonGroup>
-                <Button href="https://api.whatsapp.com/">
+              <Button href="https://api.whatsapp.com/send?phone=5511988336947" target="_blank">
                   Entre em contato{" "}
                   <FaWhatsapp style={{ marginLeft: "0.5rem", fontSize: "2rem" }} />
                 </Button>

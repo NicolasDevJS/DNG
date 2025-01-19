@@ -7,7 +7,7 @@ import styled from 'styled-components';
 const inter = Inter({ subsets: ['latin'] });
 
 const FooterWrapper = styled.footer`
-  background-color: #1f2937; 
+  background-color:rgb(0, 0, 0); 
   color: #e5e7eb; 
   padding: 0rem 1rem;
   text-align: center;
@@ -37,24 +37,24 @@ const FooterSection = styled.div`
 `;
 
 const FooterTitle = styled.h3`
-  color: #60a5fa; 
+  color:rgb(255, 255, 255); 
   margin-bottom: 0.75rem;
   font-size: 1.2rem;
 `;
 
 const FooterLink = styled.a`
-  color: #9ca3af;
+  color:rgb(255, 255, 255);
   display: block;
   margin-bottom: 0.5rem;
   text-decoration: none;
 
   &:hover {
-    color: #60a5fa; 
+    color:rgb(0, 115, 255); 
   }
 `;
 
 const ContactInfo = styled.p`
-  color: #9ca3af; 
+  color:rgb(255, 255, 255); 
   margin-bottom: 0.5rem;
 `;
 
@@ -73,21 +73,13 @@ export default function RootLayout({ children }) {
           <FooterContainer>
             <FooterSection>
               <FooterTitle>Contato</FooterTitle>
-              <ContactInfo>Telefone: (11) 98765-4321</ContactInfo>
-              <ContactInfo>Email: contato@empresa.com</ContactInfo>
-            </FooterSection>
-            <FooterSection>
-              <FooterTitle>Links Úteis</FooterTitle>
-              <FooterLink href="#">Início</FooterLink>
-              <FooterLink href="#">Sobre Nós</FooterLink>
-              <FooterLink href="#">Serviços</FooterLink>
-              <FooterLink href="#">Contato</FooterLink>
+              <ContactInfo>Telefone: (11) 98833 - 6347</ContactInfo>
+              <ContactInfo>contato@dngconsulting.com.br</ContactInfo>
             </FooterSection>
             <FooterSection>
               <FooterTitle>Redes Sociais</FooterTitle>
               <FooterLink href="#">LinkedIn</FooterLink>
               <FooterLink href="#">Instagram</FooterLink>
-              <FooterLink href="#">Facebook</FooterLink>
             </FooterSection>
           </FooterContainer>
         </FooterWrapper>

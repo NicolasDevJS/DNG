@@ -58,7 +58,7 @@ const ServiceCard = styled.div`
 const ServiceIcon = styled.div`
   width: 4rem;
   height: 4rem;
-  background-color: #778899;
+  background-color: #000000;
   color: white;
   display: flex;
   align-items: center;

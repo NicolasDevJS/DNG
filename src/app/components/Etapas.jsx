@@ -12,7 +12,7 @@ import {
 import { FiCheckCircle } from "react-icons/fi";
 
 const Section = styled.section`
-  color: #4a5568;
+  color: #000000;
   background-color: #ffffff;
   padding: 2rem 0;
 `;
@@ -47,7 +47,7 @@ const Step = styled.div`
   align-items: center;
 
   .icon {
-    background-color: #778899;
+    background-color: #000000;
     color: white;
     display: inline-flex;
     justify-content: center;
