@@ -73,7 +73,7 @@ export default function RootLayout({ children }) {
           <FooterContainer>
             <FooterSection>
               <FooterTitle>Contato</FooterTitle>
-              <ContactInfo>Telefone: (11) 98833 - 6347</ContactInfo>
+              <ContactInfo>Telefone: (11) 98833-6347</ContactInfo>
               <ContactInfo>contato@dngconsulting.com.br</ContactInfo>
             </FooterSection>
             <FooterSection>
