@@ -133,7 +133,7 @@ const Banner = () => {
                   Entre em contato{" "}
                   <FaWhatsapp style={{ marginLeft: "0.5rem", fontSize: "2rem" }} />
                 </Button>
-                <SecondaryButton href="https://linkedin.com">
+                <SecondaryButton href="https://www.linkedin.com/company/dng/">
                   Visite nosso Feed{" "}
                   <CiLinkedin style={{ marginLeft: "0.5rem", fontSize: "2rem" }} />
                 </SecondaryButton>

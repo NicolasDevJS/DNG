@@ -174,7 +174,7 @@ const Header = () => {
             <a href="https://api.whatsapp.com/send?phone=5511988336947" target="_blank" rel="noopener noreferrer">
               <FaWhatsapp style={{ fontSize: "1.5rem", color: "#25D366" }} />
             </a>
-            <a href="https://linkedin.com/" target="_blank" rel="noopener noreferrer">
+            <a href="https://www.linkedin.com/company/dng/" target="_blank" rel="noopener noreferrer">
               <CiLinkedin style={{ fontSize: "1.5rem", color: "#0077B5" }} />
             </a>
           </SocialContainer>

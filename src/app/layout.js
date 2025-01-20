@@ -78,7 +78,7 @@ export default function RootLayout({ children }) {
             </FooterSection>
             <FooterSection>
               <FooterTitle>Redes Sociais</FooterTitle>
-              <FooterLink href="#">LinkedIn</FooterLink>
+              <FooterLink href="https://www.linkedin.com/company/dng/">LinkedIn</FooterLink>
               <FooterLink href="#">Instagram</FooterLink>
             </FooterSection>
           </FooterContainer>
