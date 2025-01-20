@@ -173,7 +173,7 @@ const teamMembers = [
     linkedin: "https://www.linkedin.com/in/davson-silva/",
   },
   {
-    name: "Giusepp Bovo",
+    name: "Giuseppe Bovo",
     title: "Gerente administrativo",
     image: venush,
     description:
