@@ -38,7 +38,7 @@ const ServiceCardWrapper = styled.div`
 `;
 
 const ServiceCard = styled.div`
-  background-color: #f7fafc;
+  background-color: #f5f5f5;
   padding: 2rem;
   border-radius: 0.75rem;
   display: flex;

@@ -13,7 +13,7 @@ import { FiCheckCircle } from "react-icons/fi";
 
 const Section = styled.section`
   color: #000000;
-  background-color: #ffffff;
+  background-color: #fdfdfd;
   padding: 2rem 0;
 `;
 
@@ -21,14 +21,18 @@ const Container = styled.div`
   display: flex;
   justify-content: center;
   align-items: flex-start;
-  margin: 0 5%;
-  min-height: 600px;
+  width: 90%;
+  max-width: 1200px; 
+  padding: 0 3rem; 
+  margin: 0 auto; 
 
-  @media (max-width: 768px) {
+  @media (max-width: 800px) {
     flex-direction: column;
     align-items: center;
+    padding: 0 1rem; 
   }
 `;
+
 
 const Timeline = styled.div`
   width: 600px;

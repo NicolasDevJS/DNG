@@ -13,7 +13,7 @@ import felipe from "../../../public/felipe.png";
 
 const Section = styled.section`
   color: #000000;
-  background-color: #fff;
+  background-color: #fdfdfd;
   padding: 2rem 0;
 `;
 

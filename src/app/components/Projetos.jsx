@@ -7,7 +7,7 @@ import FadeInOnScroll from '../Scripts/FadeInOnScroll';
 
 const Section = styled.section`
   color: #4a5568;
-  background-color: #f9fafb;
+  background-color: #fdfdfd;
   padding: 3rem 0;
 `;
 
