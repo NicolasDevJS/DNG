@@ -37,8 +37,7 @@ const LogoContainer = styled.div`
 
 const LogoText = styled.span`
   margin-left: 0.5rem;
-  font-size: 2rem;
-  font-weight: bold;
+  font-size: 2.5rem;
 `;
 
 const Hamburger = styled.button`

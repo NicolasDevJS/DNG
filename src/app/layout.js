@@ -73,13 +73,14 @@ export default function RootLayout({ children }) {
           <FooterContainer>
             <FooterSection>
               <FooterTitle>Contato</FooterTitle>
-              <ContactInfo>Telefone: (11) 98833-6347</ContactInfo>
+              <ContactInfo>Telefone: (11) 98833-6947</ContactInfo>
               <ContactInfo>contato@dngconsulting.com.br</ContactInfo>
+              <ContactInfo>@dng_consulting</ContactInfo>
             </FooterSection>
             <FooterSection>
               <FooterTitle>Redes Sociais</FooterTitle>
               <FooterLink href="https://www.linkedin.com/company/dng/">LinkedIn</FooterLink>
-              <FooterLink href="#">Instagram</FooterLink>
+              <FooterLink href="https://www.instagram.com/dng_consulting/">Instagram</FooterLink>
             </FooterSection>
           </FooterContainer>
         </FooterWrapper>

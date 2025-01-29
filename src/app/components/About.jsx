@@ -1,15 +1,10 @@
 import React from "react";
-import Image from "next/image";
 import styled from "styled-components";
 import FadeInOnScroll from "../Scripts/FadeInOnScroll";
 import { FaLinkedin } from "react-icons/fa";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import nicolas from "../../../public/nicolas.png";
-import davson from "../../../public/davson.png";
-import venush from "../../../public/bovo.png";
-import felipe from "../../../public/felipe.png";
 
 const Section = styled.section`
   color: #000000;
@@ -65,22 +60,28 @@ const CardContent = styled.div`
   padding: 2rem;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  text-align: center;
+  align-items: flex-start;
+  text-align: left;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   border-radius: 1rem;
   min-height: 500px;
+  height: 100%; 
+
+  @media (max-width: 768px) {
+    min-height: 400px;
+  }
 `;
 
+
 const CardTitle = styled.h2`
-  font-size: 1.25rem;
-  font-weight: 500;
+  font-size: 1.75rem; 
+  font-weight: 700; 
   color: #1a202c;
   margin-top: 1rem;
 `;
 
 const CardSubtitle = styled.h3`
-  font-size: 1rem;
+  font-size: 1.1rem;
   color: #718096;
   margin-bottom: 1rem;
 `;
@@ -93,17 +94,24 @@ const CardText = styled.p`
 `;
 
 const SocialLinks = styled.span`
-  display: inline-flex;
+  display: flex;
+  justify-content: center; 
   align-items: center;
+  width: 100%; 
+  margin-top: 1rem;
 `;
 
+
 const SocialLink = styled.a`
-  color: #000000;
-  margin-left: 0.5rem;
+  color: #0e76a8;
 
   svg {
-    height: 1.25rem;
-    width: 1.25rem;
+    height: 3rem;
+    width: 2rem;
+  }
+
+  &:hover {
+    color: #005582;
   }
 `;
 
@@ -113,17 +121,6 @@ const StyledSlider = styled(Slider)`
   }
 `;
 
-const StyledImageContainer = styled.div`
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 150px;
-  height: 150px;
-  border-radius: 50%;
-  overflow: hidden;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  background-color: #f0f0f0;
-`;
 
 const sliderSettings = {
   dots: false,
@@ -155,45 +152,145 @@ const sliderSettings = {
   ],
 };
 
+
+const ExperiencesList = styled.ul`
+  list-style-type: disc;
+  padding-left: 1.5rem;
+  width: 100%;
+  margin-top: 1rem;
+`;
+
+const ExperienceItem = styled.li`
+  margin-bottom: 1rem;
+
+  h4 {
+    font-size: 1.1rem;
+    font-weight: 500;
+    color: #2d3748;
+  }
+
+  p {
+    font-size: 0.95rem;
+    color: #4a5568;
+    margin: 0.25rem 0 0 0;
+  }
+`;
+
+
 const teamMembers = [
   {
     name: "Nicolas Melo",
     title: "Desenvolvedor Full Stack Mobile e Web",
-    image: nicolas,
     description:
       "Desenvolvedor full stack mobile, especialista em criar soluções inovadoras que maximizam eficiência, performance e oferecem experiências excepcionais.",
     linkedin: "https://www.linkedin.com/in/nicolasmelodev/",
+    experiences: [
+      {
+        title: "Plataforma de Gestão Empresarial",
+        position: "Líder de Desenvolvimento",
+        description:
+          "Liderou a equipe no desenvolvimento de uma aplicação web escalável utilizando .NET e Azure, melhorando a performance em 30%.",
+      },
+      {
+        title: "App de Serviços Financeiros",
+        position: "Desenvolvedor Mobile",
+        description:
+          "Desenvolveu um aplicativo mobile multiplataforma que alcançou mais de 50.000 downloads na App Store e Google Play.",
+      },
+      {
+        title: "Sistema de Automação Comercial",
+        position: "Arquitetura de Soluções",
+        description:
+          "Projetou e implementou a arquitetura de um sistema de gestão empresarial, garantindo alta disponibilidade e segurança.",
+      },
+    ],
   },
   {
     name: "Davson Oliveira",
     title: "Desenvolvedor Back-end",
-    image: davson,
     description:
       "Desenvolvedor backend especializado em arquiteturas robustas, focado em alta performance, segurança, escalabilidade e integração para sistemas eficientes e confiáveis.",
     linkedin: "https://www.linkedin.com/in/davson-silva/",
+    experiences: [
+      {
+        title: "Sistema de Gestão Empresarial",
+        position: "Engenheiro de Software",
+        description:
+          "Desenvolveu APIs RESTful utilizando .NET Core e implementou soluções de banco de dados otimizadas para grandes volumes de dados.",
+      },
+      {
+        title: "Integração com Cloud Azure",
+        position: "Especialista em Cloud",
+        description:
+          "Implementou serviços no Azure, incluindo Azure Functions e Azure SQL, garantindo alta disponibilidade e escalabilidade dos sistemas.",
+      },
+      {
+        title: "Plataforma de E-commerce",
+        position: "Desenvolvedor Back-end",
+        description:
+          "Arquitetou e desenvolveu microserviços para uma plataforma de e-commerce, melhorando a modularidade e facilitando a manutenção.",
+      },
+    ],
   },
   {
     name: "Giuseppe Bovo",
-    title: "Gerente administrativo",
-    image: venush,
+    title: "Gerente Administrativo",
     description:
       "Responsável pela parte administrativa e executiva da DNG, gerenciando atividades e garantindo eficiência dos processos internos e uma boa relação cliente-empresa.",
     linkedin: "https://www.linkedin.com/in/giuseppe-bovo-801a93169/",
+    experiences: [
+      {
+        title: "Gerenciamento de Projetos Digitais",
+        position: "Gerente de Projetos",
+        description:
+          "Supervisionou múltiplos projetos simultaneamente, garantindo a entrega dentro do prazo e do orçamento estipulados.",
+      },
+      {
+        title: "Otimização de Fluxos Operacionais",
+        position: "Analista de Processos",
+        description:
+          "Implementou melhorias nos processos internos que resultaram em um aumento de 20% na eficiência operacional.",
+      },
+      {
+        title: "Atendimento e Relacionamento B2B",
+        position: "Coordenador de Atendimento",
+        description:
+          "Desenvolveu estratégias de relacionamento que aumentaram a satisfação dos clientes em 15%.",
+      },
+    ],
   },
   {
     name: "Felipe Emanuel",
     title: "Desenvolvedor Web",
-    image: felipe,
     description:
       "Desenvolvedor web especializado em criar interfaces intuitivas e sistemas dinâmicos, focado em performance, responsividade e experiências imersivas para o usuário.",
     linkedin: "https://www.linkedin.com/in/felipe-emanuel-/",
+    experiences: [
+      {
+        title: "Loja Virtual de Moda",
+        position: "Desenvolvedor Front-end",
+        description:
+          "Criou uma plataforma de e-commerce responsiva que aumentou as vendas online em 25% no primeiro semestre após o lançamento.",
+      },
+      {
+        title: "Dashboard de Business Intelligence",
+        position: "Desenvolvedor Full Stack",
+        description:
+          "Desenvolveu um dashboard interativo para análise de dados em tempo real, melhorando a tomada de decisões estratégicas.",
+      },
+      {
+        title: "Portal de Educação Online",
+        position: "Desenvolvedor Web",
+        description:
+          "Implementou funcionalidades avançadas em uma aplicação web, aumentando a interatividade e a satisfação dos usuários.",
+      },
+    ],
   },
 ];
 
 const About = () => {
   return (
     <Section id="sobre">
-      <TitleWrapper />
       <FadeInOnScroll>
         <ContentWrapper>
           <Title>Sobre a nossa equipe</Title>
@@ -215,22 +312,29 @@ const About = () => {
           <div key={index}>
             <FadeInOnScroll>
               <CardContent>
-                <StyledImageContainer>
-                  <Image
-                    alt={member.name}
-                    src={member.image}
-                    width={150}
-                    height={150}
-                    style={{
-                      objectFit: "cover",
-                    }}
-                  />
-                </StyledImageContainer>
                 <CardTitle>{member.name}</CardTitle>
                 <CardSubtitle>{member.title}</CardSubtitle>
                 <CardText>{member.description}</CardText>
+                {member.experiences && member.experiences.length > 0 && (
+                  <ExperiencesList>
+                    {member.experiences.map((exp, idx) => (
+                      <ExperienceItem key={idx}>
+                        <h4>
+                          {exp.title} - <em>{exp.position}</em>
+                        </h4>
+                        <p>{exp.description}</p>
+                      </ExperienceItem>
+                    ))}
+                  </ExperiencesList>
+                )}
+
                 <SocialLinks>
-                  <SocialLink href={member.linkedin}>
+                  <SocialLink
+                    href={member.linkedin}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label={`${member.name} no LinkedIn`}
+                  >
                     <FaLinkedin />
                   </SocialLink>
                 </SocialLinks>
